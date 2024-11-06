@@ -46,5 +46,5 @@ The following sorting algorithms are implemented in the project:
 1. Bubble Sort: A simple comparison-based sorting algorithm where the largest elements "bubble" to the end of the array after each iteration.
 2. Insertion Sort: Builds the sorted array one element at a time by comparing the current element with the previous elements.
 3. Merge Sort: A divide-and-conquer algorithm that splits the array into halves, recursively sorts each half, and merges the sorted halves.
-4.Quick Sort: Another divide-and-conquer algorithm that selects a "pivot" and partitions the array around the pivot.
+4. Quick Sort: Another divide-and-conquer algorithm that selects a "pivot" and partitions the array around the pivot.
 5.Heap Sort: Converts the array into a heap and repeatedly extracts the maximum element to create a sorted array.
