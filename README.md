@@ -20,13 +20,14 @@ Live link to see: https://poojasharma3105.github.io/Sorting-Visualizer/
 1. Clone the Repository
 Clone the repository to your local machine using Git:
 git clone https://github.com/your-username/sorting-visualizer.git
+
 cd sorting-visualizer
 
-2. Install Dependencies
+3. Install Dependencies
 If you're working on the backend with Node.js or using any packages, install the dependencies:
 npm install
 
-3. Run the App Locally
+4. Run the App Locally
 If you have a Node.js server:
 npm start
 
