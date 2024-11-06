@@ -1,0 +1,277 @@
+/* Global Reset and Font Settings */
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Georgia', serif, Arial, sans-serif;
+    font-size: 1rem;
+    font-weight: normal;
+    text-transform: none;
+    box-sizing: border-box;
+}
+
+/* General Body Styling */
+body {
+    background-color: #f4f4f4; /* Soft light gray background */
+    color: #333333; /* Dark gray text for readability */
+    line-height: 1.6;
+    font-size: 1.05rem; /* Slightly larger font for better readability */
+    padding: 20px;
+}
+
+/* Navigation Bar Styling */
+nav {
+    background-color: #ffffff;
+    color: #333333;
+    display: grid;
+    grid-template-columns: 30% 60%;
+    gap: 5%;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Array Inputs Section */
+/* Styling for the Generate New Array Button */
+nav .array-inputs #a_generate {
+    background: linear-gradient(145deg, #00c6ff, #0072ff); /* Blue gradient for a dynamic, modern look */
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    font-size: 1.2rem;
+    font-weight: 600;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease, color 0.3s ease;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow to give depth */
+    width: 100%; /* Ensure button takes full width of container */
+    text-align: center;
+    margin-top: 10px; /* Space between the button and other elements */
+}
+
+/* Hover Effect for Generate New Array Button */
+nav .array-inputs #a_generate:hover {
+    background: linear-gradient(145deg, #0072ff, #00c6ff); /* Reverse gradient on hover for interactive feel */
+    transform: scale(1.1); /* Slight scale-up effect on hover */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15); /* Stronger shadow on hover */
+    color: #fff; /* Ensures text stays white on hover */
+}
+
+/* Active Effect (When clicked) */
+nav .array-inputs #a_generate:active {
+    transform: scale(0.98); /* Shrinks slightly on click */
+}
+
+/* Focus Effect */
+nav .array-inputs #a_generate:focus {
+    outline: none; /* Removes default outline */
+    border: 2px solid #0072ff; /* Adds a custom blue border on focus */
+}
+
+/* Adjusting the Gap Between Array Inputs and Button */
+nav .array-inputs {
+    display: grid;
+    grid-template-columns: 1fr 1.15fr; /* 2 equal-width columns for inputs and button */
+    gap: 10px; /* Reduced gap between input elements */
+    place-content: center;
+    padding: 0 10px;
+    margin-bottom: 10px; /* Reduced bottom margin for closer alignment */
+}
+
+/* Header Section on the Right Side */
+nav .header_right {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+nav .header_right .nav-heading {
+    font-size: 2rem;
+    padding-bottom: 15px;
+    font-weight: bold;
+    color: blue; /* Dark gray for headings to stand out */
+    margin-bottom: 10px;
+}
+
+nav .header_right .algos {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    gap: 15px;
+}
+
+/* Styling for the Algorithm Buttons */
+nav .header_right .algos button {
+    background: linear-gradient(145deg, #00c6ff, #0072ff); /* Blue gradient for an eye-catching effect */
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    font-size: 1.2rem;
+    font-weight: 600;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease, color 0.3s ease;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow to make it pop */
+    margin: 8px; /* Space between buttons */
+}
+
+nav .header_right .algos button:hover {
+    background: linear-gradient(145deg, #0072ff, #00c6ff); /* Reverse gradient on hover for interaction */
+    transform: scale(1.1); /* Slight scale-up effect on hover */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15); /* Stronger shadow on hover */
+    color: #fff; /* Ensuring text stays white */
+}
+
+nav .header_right .algos button:active {
+    transform: scale(0.98); /* Slight shrink effect when the button is clicked */
+}
+
+nav .header_right .algos button:focus {
+    outline: none; /* Removes default focus outline */
+    border: 2px solid #0072ff; /* Adds custom border on focus */
+}
+
+/* Locked Buttons Styling */
+nav .header_right .algos .butt_locked {
+    background-color: #e0e0e0; /* Light gray background for locked buttons */
+    cursor: not-allowed; /* Change cursor to not-allowed */
+    color: #b0b0b0; /* Lighter text color */
+    box-shadow: none; /* Remove shadow for locked buttons */
+}
+
+/* Selected Buttons Styling */
+nav .header_right .algos .butt_selected {
+    background-color: #4CAF50; /* Green background for selected button */
+    color: white;
+    box-shadow: 0 4px 10px rgba(0, 128, 0, 0.2); /* Green shadow */
+}
+
+/* Hover Effect for Selected Button */
+nav .header_right .algos .butt_selected:hover {
+    background-color: #45a049; /* Darker green on hover */
+    box-shadow: 0 6px 14px rgba(0, 128, 0, 0.25); /* Stronger shadow on hover */
+}
+
+/* Unselected Buttons Styling */
+nav .header_right .algos .butt_unselected {
+    background-color: #ff6347; /* Red background for unselected button */
+    color: white;
+    box-shadow: 0 4px 8px rgba(255, 99, 71, 0.2); /* Soft shadow */
+}
+
+/* Hover Effect for Unselected Button */
+nav .header_right .algos .butt_unselected:hover {
+    background-color: #ff4c2a; /* Darker red on hover */
+    box-shadow: 0 6px 12px rgba(255, 99, 71, 0.3); /* Stronger shadow on hover */
+}
+
+/* Section Layout */
+section {
+    display: grid;
+    grid-template-columns: 20% 60% 20%;
+    margin-top: 40px;
+    gap: 30px;
+}
+
+/* Content Container Styles */
+section .Complexity_Containers {
+    margin-top: 5%;
+}
+
+section .Complexity_Containers .Pair_Definitions p {
+    font-size: 1rem;
+    color: #666666; /* Light gray for content text */
+}
+
+section #Info_Cont1, section #Info_Cont2 {
+    padding: 5% 10%;
+    background-color: #ffffff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    border-radius: 12px;
+    transition: box-shadow 0.3s ease-in-out;
+}
+
+section #Info_Cont1 h3, section #Info_Cont2 h3 {
+    text-decoration: underline;
+    color: #0072ff; /* Blue color for headings */
+    font-size: 1.2rem;
+}
+
+/* Array Container */
+section #array_container {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    width: 100%;
+    height: 70vh;
+    background-color: #f4f4f4;
+    border-radius: 12px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    padding: 20px 0;
+    flex-direction: column-reverse; /* Reverse the order of bars */
+}
+
+/* Bars Styling */
+.array-bar {
+    background-color: #b8b8b8;
+    margin: 0 2px;
+    width: 100%;
+    transition: height 0.2s ease-in-out;
+    align-self: flex-end;
+}
+
+.array-bar:hover {
+    background-color: #999999;
+}
+
+/* Hide Elements */
+.hide {
+    display: none;
+}
+
+/* Media Queries for Responsive Design */
+
+/* Small Screens (Mobile devices) */
+@media (max-width: 480px) {
+    nav {
+        grid-template-columns: 1fr;
+        padding: 10px;
+    }
+
+    section {
+        grid-template-columns: 1fr;
+    }
+
+    section #array_container {
+        height: 50vh;
+    }
+
+    nav .array-inputs {
+        grid-template-columns: 1fr;
+        gap: 12px;
+    }
+
+    nav .header_right .algos {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+/* Tablets */
+@media (min-width: 481px) and (max-width: 1250px) {
+    nav {
+        grid-template-columns: 40% 60%;
+    }
+
+    section {
+        grid-template-columns: 1fr 2fr 1fr;
+    }
+
+    section #array_container {
+        height: 60vh;
+    }
+}
+
+/* Larger Screens (Desktops and Laptops) */
+@media (min-width: 1251px) {
+    section #array_container {
+        height: 70vh;
+    }
+}
